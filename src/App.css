@@ -1,0 +1,246 @@
+/* App.css */
+
+/* Apply a background color to the entire app */
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: rgb(255,66,66);
+  background: linear-gradient(313deg, rgba(255,66,66,0.7945772058823529) 53%, rgba(0,212,255,0.9458377100840336) 53%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Main container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Content container for form and slider */
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Form container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align form elements to the left */
+}
+
+/* Apply red and green colors to form elements */
+.form-container label {
+  color: #333; /* Text color */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 5px;
+}
+
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container input[type="text"],
+.form-container button {
+  border: 1px solid #ccc; /* Gray border for inputs and buttons */
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* Style the button */
+.form-container button {
+  background-color: #1da1f2; /* Twitter blue background color */
+  color: white; /* White text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.form-container button:hover {
+  background-color: #007bbd; /* Darker blue on hover */
+}
+
+
+/* Style the slideshow for mobile view */
+.slide {
+  background-color: #66ff33; /* Green background color */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 400px; /* Set maximum height for individual slides */
+  overflow: hidden; /* Hide overflow content beyond 400px */
+}
+
+/* Style the caption and description */
+.slide h3 {
+  color: #ff5733; /* Red text color */
+  font-size: 18px;
+  margin: 10px 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /*left: %;*/
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide p {
+  font-size: 14px;
+  position: absolute;
+  top: 44%;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left: 50%;
+  /*left: %;*/
+  transform: translate(-50%, -50%);
+}
+.container{
+  display: flex;
+}
+.slider-container {
+  flex-grow: 1;
+  max-width: 100%;
+  /* max-height: 400px; Set maximum height for the slider */
+  background-color: white;
+  /* padding: 20px; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden; /* Hide overflow content beyond 400px */
+}
+
+/* Style the slideshow for mobile view */
+.slide {
+  background-color: #66ff33; /* Green background color */
+  padding: 0; /* Remove padding to make room for the image */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 400px; /* Set maximum height for individual slides */
+  overflow: hidden; /* Hide overflow content beyond 400px */
+}
+
+/* Style the image within the slide */
+.slide img {
+  max-width: 100%; /* Ensure the image doesn't exceed the slide's width */
+  max-height: inherit;
+}
+
+
+
+
+/* SliderComponent.css */
+
+/* Style for each slide */
+.slide {
+  position: relative;
+}
+
+/* Style for the slide content (title and description) */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+}
+
+/* Style for the title within the slide */
+.slide-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Style for the description within the slide */
+.slide-content p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* SliderComponent.css */
+
+/* Style for each slide */
+.slide {
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0; /* Background color for the slide */
+}
+
+/* Style for the slide content (header and paragraph) */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333; /* Text color for the header and paragraph */
+}
+
+/* Style for the header within the slide */
+.slide-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Style for the paragraph within the slide */
+.slide-content p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.submit{
+  width: 30%!important;
+  margin-inline: auto!important;
+}
+
+.image-upload-container{
+  width: 80%;
+  margin-inline: 25px;
+}
+h2{
+  margin-inline:auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SliderComponent.css */
+
+/* Style for each slide */
+.slide {
+  position: relative;
+}
+
+/* Style for the slide content (title and description) */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+}
+

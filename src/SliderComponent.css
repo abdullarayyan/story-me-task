@@ -1,0 +1,32 @@
+/* SliderComponent.css */
+
+/* Style for each slide */
+.slide {
+    position: relative;
+  }
+  
+  /* Style for the slide content (title and description) */
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Style for the title within the slide */
+  .slide-content h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style for the description within the slide */
+  .slide-content p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
